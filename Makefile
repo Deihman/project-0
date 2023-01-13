@@ -10,4 +10,5 @@ install:
 	# Nothing installed
 
 run:
-	@(cd hello; python3 hello.py)
+	@(cp credentials.ini ./hello/credentials.ini; cd hello; python3 hello.py; rm credentials.ini)
+
